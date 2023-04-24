@@ -13,4 +13,38 @@ In C, the following 6 operators are bitwise operators (also known as bit operato
 
 ##__Code__
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+		//To count the number of 1's
+	int num,count=0;
+	printf("Enter the number:\n");
+	scanf("%d",&num);
+	
+	do{
+		if(num&1){
+		count++;
+		}
+		num=num>>1;
+		
+	}while(num!=0);
+	printf("Number of 1's is:%d",count);
+	//To check number is even or odd
+	if(num&0){
+		printf("Number is odd");
+	}
+	else {
+		printf("Number is even");
+	}
+	
+	return 0;
+}
+```
+
+---
+
+## __Output__
+![Screenshot 2023-04-11 152649 (2)](https://user-images.githubusercontent.com/113619312/234052498-a3f5439d-874c-483b-8108-e0da7513ffaa.png)
