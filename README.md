@@ -11,7 +11,7 @@ In C, the following 6 operators are bitwise operators (also known as bit operato
 
 ![bitwose-ope](https://user-images.githubusercontent.com/113619312/234051949-06920a17-ca18-4d85-bfba-6aed5ca1309e.png)
 
-##__Code__
+## __Code__
 ```
 #include <stdio.h>
 #include <stdlib.h>
