@@ -13,7 +13,7 @@ In C, the following 6 operators are bitwise operators (also known as bit operato
 
 ---
 
-## __Code__
+## __Code I__
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,5 +48,74 @@ int main() {
 
 ---
 
+## __Output I__
+![Screenshot 2023-04-11 154745](https://user-images.githubusercontent.com/113619312/234366739-d704113a-8fbe-431b-96c9-b9c636886fce.png)
+
+## __Code II__
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	/*int x,y,z;
+	char bitwise;
+	printf("Enter the Bitwise operator:");
+	scanf("%c",&bitwise);
+	printf("Enter the first number:\n");
+	scanf("%d",&x);
+	printf("Enter the second number:\n");
+	scanf("%d",&y);
+	
+
+
+	
+	switch (bitwise)
+	{
+		case '&':
+			z=x&y;
+			printf("Bitwise AND of x & y is:%d\n",z);
+			break;
+		case '|':
+			z=x|y;
+			printf("Bitwise OR of x & y is:%d\n",z);
+			break;
+		case '^':
+			z=x^y;
+			printf("Bitwise XOR of x & y is:%d\n",z);
+			break;
+		case '~':
+			z=x~y;
+			printf("Bitwise NOT of x & y is:%d\n",z);
+			break;
+		default :
+			printf("Enter a Valid Bitwise Operator(&/|/^/~)");
+	}*/
+	//To count the number of 1's
+	int num,count=0;
+	printf("Enter the number:\n");
+	scanf("%d",&num);
+	
+	do{
+		if(num&1){
+		count++;
+		}
+		num=num>>1;
+		
+	}while(num!=0);
+	printf("Number of 1's is:%d",count);
+	//To check number is even or odd
+	/*if(num&1){
+		printf("Number is odd");
+	}
+	else {
+		printf("Number is even");
+	}*/
+	
+	return 0;
+}
+```
+
 ## __Output__
-![Screenshot 2023-04-11 152649 (2)](https://user-images.githubusercontent.com/113619312/234052498-a3f5439d-874c-483b-8108-e0da7513ffaa.png)
+![Screenshot 2023-04-11 154314](https://user-images.githubusercontent.com/113619312/234367011-d05cf3b7-3c2b-40bd-ac12-2d20abd0b980.png)
