@@ -15,6 +15,7 @@ In C, the following 6 operators are bitwise operators (also known as bit operato
 
 ## __Code I__
 ```
+//Bitwise_operation
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -53,6 +54,7 @@ int main() {
 
 ## __Code II__
 ```
+//Bitwise_main
 #include <stdio.h>
 #include <stdlib.h>
 
