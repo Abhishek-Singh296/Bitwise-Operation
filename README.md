@@ -59,7 +59,7 @@ int main() {
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main() {
-	/*int x,y,z;
+	int x,y,z;
 	char bitwise;
 	printf("Enter the Bitwise operator:");
 	scanf("%c",&bitwise);
@@ -91,27 +91,8 @@ int main() {
 			break;
 		default :
 			printf("Enter a Valid Bitwise Operator(&/|/^/~)");
-	}*/
-	//To count the number of 1's
-	int num,count=0;
-	printf("Enter the number:\n");
-	scanf("%d",&num);
-	
-	do{
-		if(num&1){
-		count++;
-		}
-		num=num>>1;
-		
-	}while(num!=0);
-	printf("Number of 1's is:%d",count);
-	//To check number is even or odd
-	/*if(num&1){
-		printf("Number is odd");
 	}
-	else {
-		printf("Number is even");
-	}*/
+	
 	
 	return 0;
 }
